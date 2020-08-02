@@ -52,7 +52,15 @@ export const Avatar = styled.div`
   top: 0;
   left: 0;
 `;
-export const Content = styled.div``;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin-top: 2px;
+  padding-left: 60px;
+`;
 export const Header = styled.div``;
 export const Description = styled.div``;
 export const ImageContent = styled.div``;
