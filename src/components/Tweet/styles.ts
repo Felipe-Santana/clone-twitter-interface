@@ -39,7 +39,19 @@ export const Body = styled.div`
 
   position: relative;
 `;
-export const Avatar = styled.div``;
+
+export const Avatar = styled.div`
+  width: 49px;
+  height: 49px;
+
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--gray);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+`;
 export const Content = styled.div``;
 export const Header = styled.div``;
 export const Description = styled.div``;
