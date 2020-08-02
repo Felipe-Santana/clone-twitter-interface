@@ -33,7 +33,12 @@ export const Retweeted = styled.div`
   color: var(--gray);
 `;
 
-export const Body = styled.div``;
+export const Body = styled.div`
+  display: flex;
+  margin-top: 3px;
+
+  position: relative;
+`;
 export const Avatar = styled.div``;
 export const Content = styled.div``;
 export const Header = styled.div``;
