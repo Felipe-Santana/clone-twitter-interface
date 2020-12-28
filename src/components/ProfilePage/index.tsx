@@ -20,7 +20,7 @@ const ProfilePage: React.FC = () => {
         <Avatar />
       </Banner>
       <ProfileData>
-        <EditButton outlined>Editar perfil</EditButton>
+        <EditButton outlined>Set up profile</EditButton>
         <h1>Felipe Santana</h1>
         <h2>@felipe_santana</h2>
 
