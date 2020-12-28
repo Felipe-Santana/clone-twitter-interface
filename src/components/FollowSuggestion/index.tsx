@@ -5,13 +5,18 @@ import { Container, Avatar, Info, FollowButton } from './styles';
 interface Props {
   name: string;
   nickname: string;
+  profileImageUrl: string;
 }
 
-const FollowSuggestion: React.FC<Props> = ({ name, nickname }) => {
+const FollowSuggestion: React.FC<Props> = ({
+  name,
+  nickname,
+  profileImageUrl,
+}) => {
   return (
     <Container>
       <div>
-        <Avatar />
+        <Avatar src={profileImageUrl} />
 
         <Info>
           <strong>{name}</strong>
