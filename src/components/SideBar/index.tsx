@@ -26,14 +26,20 @@ const SideBar: React.FC = () => {
           <List
             title="You might like"
             elements={[
-              <FollowSuggestion name="Chris Evans" nickname="@ChrisEvans" />,
+              <FollowSuggestion
+                name="Chris Evans"
+                nickname="@ChrisEvans"
+                profileImageUrl="https://pbs.twimg.com/profile_images/1320917504013848577/-VTJLuI9_400x400.jpg"
+              />,
               <FollowSuggestion
                 name="Luke Evans"
                 nickname="@TheRealLukevans"
+                profileImageUrl="https://pbs.twimg.com/profile_images/1328266032167915521/tlUbhXlh_400x400.jpg"
               />,
               <FollowSuggestion
                 name="Margot Robbie"
                 nickname="@MargotRobbie"
+                profileImageUrl="https://pbs.twimg.com/profile_images/913101351214710784/414BOKAm_400x400.jpg"
               />,
             ]}
           />
