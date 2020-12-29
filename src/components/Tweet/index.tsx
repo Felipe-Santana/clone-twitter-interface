@@ -18,7 +18,19 @@ import {
   Dot,
 } from './styles';
 
-const Tweet: React.FC = () => {
+interface TweetProps {
+  likes: string;
+  comments: string;
+  retweets: string;
+  imageUrl?: string;
+}
+
+const Tweet: React.FC<TweetProps> = ({
+  likes,
+  comments,
+  retweets,
+  imageUrl,
+}) => {
   return (
     <Container>
       <Retweeted>
@@ -34,27 +46,27 @@ const Tweet: React.FC = () => {
             <Dot />
             <time>27 jun</time>
           </Header>
-
           <Description>
             Foguete não tem ré
             <span role="img" aria-label="Rocket">
               🚀
             </span>
           </Description>
-          <ImageContent />
+
+          {imageUrl && <ImageContent src={imageUrl} />}
 
           <Icons>
             <Status>
               <CommentIcon />
-              23
+              {comments}
             </Status>
             <Status>
               <RetweetIcon />
-              48
+              {retweets}
             </Status>
             <Status>
               <LikeIcon />
-              999
+              {likes}
             </Status>
           </Icons>
         </Content>
