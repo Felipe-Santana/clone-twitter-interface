@@ -6,6 +6,8 @@
 
 ## Screenshots
 
+https://sad-shirley-b30f6f.netlify.app/
+
 ### Desktop
 
 ![desktop screenshot](https://github.com/Felipe-Santana/clone-twitter-interface/blob/master/.github/desktop.png)
